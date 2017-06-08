@@ -1,0 +1,7 @@
+@CHARSET "UTF-8";
+.validator-error {
+	color: red;
+	font-size: 8px;
+	right: 10px;
+	position: absolute;
+}

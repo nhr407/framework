@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+       "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="priv.zhouhuayi.framework.mapper.common.CommonMapper">
+	<!-- 根据sql执行增删改操作返回影响行数 -->
+	<insert id="executeAction" parameterType="String">
+		${value}
+	</insert>
+	
+	<!-- 根据sql查询返回单条Map格式数据 -->
+	<select id="findOneData" parameterType="String" resultType="java.util.Map">
+		${value}
+	</select>
+	
+	<!-- 根据sql查询返回多条List<Map>格式数据 -->
+	<select id="findManyData" parameterType="String" resultType="java.util.Map">
+		${value}
+	</select>
+
+	<!-- 根据sql查询返回查询总数 -->
+	<select id="findCount" parameterType="String" resultType="long">
+		${value}
+	</select>
+	
+	<!-- 根据sql查询返回单个值 -->
+	<select id="findOneValue" parameterType="String" resultType="Object">
+		${value}
+	</select>
+	
+	<!-- 根据sql查询返回List<Long>的集合 -->
+	<select id="findListBySql" parameterType="String" resultType="long">
+		${value}
+	</select>
+	
+	<!-- 根据sql查询返回List<Object>的集合 -->
+	<select id="findListObjBySql" parameterType="String" resultType="Object">
+		${value}
+	</select>
+	
+	<!-- 添加单个 -->
+	<insert id="addEntity" parameterType="priv.zhouhuayi.framework.util.pojo.Params"
+		useGeneratedKeys="true" keyProperty="id">
+		insert into ${tables}
+		<foreach collection="insertMap.keys" item="k" index="index" open="(" separator="," close=")">
+			${k}
+		</foreach>
+		values
+		<foreach collection="insertMap.values" item="v" index="index"
+			open="(" separator="," close=")">
+			#{v}
+		</foreach>
+	</insert>
+
+	<!-- 批量添加 -->
+	<insert id="batchAdd" parameterType="priv.zhouhuayi.framework.util.pojo.Params">
+		insert into ${tables}
+		<foreach collection="insertMap.keys" item="k" open="("
+			separator="," close=")">
+			<if test="null != insertMap[k]">${k}</if>
+		</foreach>
+		values
+		<foreach collection="bacthInsertMap" item="item" index="index" separator=",">
+			<foreach collection="item.values" item="v" open="("
+				separator="," close=")">
+				#{v}
+			</foreach>
+		</foreach>
+	</insert>
+	
+	<!-- 批量删除 -->
+	<delete id="batchDelete" parameterType="priv.zhouhuayi.framework.util.pojo.Params">
+		DELETE FROM ${tables} WHERE ${deleteCoulumnName}
+		<foreach collection="deleteList" item="id" index="index"
+           open="IN(" close=")" separator=",">
+           #{id}
+        </foreach>
+	</delete>
+	
+</mapper>

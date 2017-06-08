@@ -1,0 +1,220 @@
+@CHARSET "UTF-8";
+.contentBody {
+	padding: 10px 20px;
+}
+
+.searchSelect {
+	width: auto;
+	border-color: #D6D4D4;
+	padding: 4.8px 12px;
+}
+
+.searchDiv {
+	width: 400px;
+	float: right;
+}
+
+.btn-add {
+	color: #fff;
+	background-color: #34a8ff;
+	border-color: #34a8ff;
+}
+
+.btn-df {
+	background-color: #fff;
+	border-color: #DDDBDB;
+}
+
+.btn-remove {
+	color: #fff;
+	background-color: #fe345a;
+	border-color: #fe345a;
+}
+
+.btn-delete {
+	color: #fff;
+	background-color: #f7bf38;
+	border-color: #f7bf38;
+}
+
+.btn-reply {
+	color: #fff;
+	background-color: #ff6839;
+	border-color: #ff6839;
+}
+
+.table-nav {
+	width: 100%;
+	background-color: #f6f8f7;
+	margin-top: 25px;
+	height: 36px;
+	border: solid #dddddd 1px;
+	padding-top: 2px;
+}
+
+.table-nav .leftDiv {
+	padding-top: 5px;
+	float: left;
+}
+
+.table-nav-span {
+	font-family: Times New Roman Georgia;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.table-nav-action {
+	float: right;
+	right: 20px;
+	position: fixed;
+}
+
+.table_list {
+	width: 100%;
+	border-color: rgba(245, 245, 245, 0.34);
+	background-color: white;
+}
+
+.table_list tr {
+	height: 30px;
+	font-size: 18px;
+	font-weight: bold;
+	border-color: #F2F0F0;
+}
+
+.table_list tr td {
+	text-align: center;
+	vertical-align: middle;
+}
+
+.table_list tr td a {
+	padding-left: 10px;
+	color: #2CB9FF;
+	font-weight: bold;
+}
+
+.padding {
+	margin-top: 20px;
+}
+
+.padding .sel {
+	float: left;
+}
+
+.padding-btn {
+	border: solid 1px #DDD;
+	float: left;
+}
+
+.padding-btn button {
+	margin-top: -1px;
+	margin-bottom: -1px;
+}
+
+.padding-refresh {
+	margin-left: 20px;
+}
+
+.padding-info {
+	float: right;
+}
+
+.altroww {
+	background-color: #f9f9f9;
+}
+
+.padding button:focus {
+	background-color: #33a9ff;
+	color: #FFFFFF;
+}
+
+.padding input {
+	width: 40px;
+	height: 20px;
+}
+
+#searchDiv {
+	height: 20px;
+}
+
+.icon-cursor {
+	cursor: pointer;
+}
+
+
+/*表单添加页面样式*/
+
+.form-add {
+	text-align: center;
+}
+
+.form-add-div {
+	width: 90%;
+	margin: 10px 0;
+	float: left;
+}
+
+.form-add-div3 {
+	width: 47%;
+	margin: 10px 1.5%;
+	float: left;
+}
+
+.form-add-div3 img {
+	width: 100px;
+	height: 100px;
+	float: left;
+}
+
+.form-add-div3 input {
+	float: left;
+}
+
+.form-add-div-lable3 {
+	width: 20%;
+	float: left;
+	margin-top: 5px;
+}
+
+.form-add-div2 {
+	width: 44%;
+	margin: 10px 20px;
+	float: left;
+}
+
+.form-add-div-lable {
+	width: 30%;
+	float: left;
+	margin-top: 5px;
+}
+
+.form-add-div-input {
+	width: 60%;
+	float: left;
+}
+
+.form-add-div-submit {
+	margin-right: 10px;
+}
+
+.form-add-btnDiv {
+	width: 90%;
+	margin: 10px 5%;
+	float: left;
+}
+
+.form-add-btnDiv button {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.form-add-div4 {
+	width: 97%;
+	padding: 0px 1.5%;
+	height: 236px;
+	overflow: hidden;
+}
+
+.form-add-div4 .form-add-div-lable3 {
+	text-align: left;
+}

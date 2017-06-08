@@ -1,0 +1,258 @@
+html, body{width: 100%;height: 100%;margin: 0;padding: 0;}
+p{padding: 0;margin: 0;list-style: none;}
+.clear{clear:both;}
+
+#Popup{width: 100%;height: 100%;background: rgba(168,170,170,0.7);z-index: 1000;top:0;position: fixed;display: none;}
+
+/*置顶事件部分*/
+#TTop{width: 140px;height: 30px;padding: 17px 20px;background: #fff;margin: 30vh auto;border:1px solid #ddd;border-radius: 4px;display: none;}
+#TTop p{background: url(../images/Success.png) 100% no-repeat;background-size: 30px 30px;background-position: 0% 50%;font-size: 14px;
+    line-height: 30px;width: 100%;height: 30px;text-align: left;text-indent: 40px;}
+
+
+/*删除事件部分*/
+#Delete{width:260px;height: 150px;margin: 30vh auto;border:1px solid #ddd;border-radius: 2px; display: none;}
+.Delete_top{width: 90%;height: 30px;border-bottom: 1px solid #ddd;background: #f2f2f2;padding: 5px 5%;}
+.Delete_top p{width: auto;height: 30px;line-height: 30px;font-size: 14px;color: #232323;text-align: left;float: left;}
+.Delete_top img{width: 12px;height: 12px;padding: 9px;display: block; float: right;cursor: pointer;}
+.Delete{width: 90%;height: auto;overflow: hidden;padding: 15px 5%;background: #fff;}
+.Delete p{width: 100%;height: 30px;text-align: left;background: url(../images/Doubt.png) 100% no-repeat;
+    background-size: 30px 30px;background-position: 0% 50%;font-size: 14px;line-height: 30px;color: #000;text-indent: 40px;}
+.Delete_btn{width: 100%;height: auto;overflow: hidden;text-align: center;padding: 5px 0px;}
+.Delete_btn input{width: 85px;height: 34px;margin: 5px;border-radius: 4px;border:0px;outline: none;cursor: pointer;font-size: 14px;line-height: 34px;}
+.Sure{background: #34a8ff;color: #fff;}
+.Cancel{background: #f1f1f1;color: #000;}
+
+
+/*礼物添加页面部分*/
+#Add_gift{width: 430px;height: auto;overflow: hidden;border:1px solid #ddd;border-radius: 2px;margin: 10px auto;display: none;}
+.Add_gift_top{width: 90%;height: 30px;border-bottom: 1px solid #ddd;background: #f2f2f2;padding: 5px 5%;}
+.Add_gift_top p{width: auto;height: 30px;line-height: 30px;font-size: 14px;color: #232323;text-align: left;float: left;}
+.Add_gift_top img{width: 12px;height: 12px;padding: 9px;display: block; float: right;cursor: pointer;}
+.Add_gift{padding: 10px 42px;width: 346px;height: auto;overflow: hidden;background: #fff;}
+.Add_gift_p, .Add_gift_p2{width: 100%;height: auto;overflow: hidden;padding: 10px 0px;}
+.Add_gift_p p{width: 70px;height: 34px;line-height: 34px;font-size: 14px;color: #000;text-align: right;float: left;}
+.Add_gift_p_input{border:1px solid #ddd;border-radius: 2px;outline: none;width: 238px;height: 32px;font-size: 14px;color: #666;
+    line-height: 32px;text-align: left;display: block;float: right;padding: 0px 10px;}
+.Add_gift_p_upload{width: 86px;height: 32px;border:0px;outline: none;font-size: 14px;color: #fff;background: #ff6838;
+    line-height: 32px;border-radius: 4px;cursor: pointer;margin-top: 15px;margin-left: 85px;display: block;}
+.Add_gift_p2 p{width: 70px;height: 86px;line-height: 86px;font-size: 14px;color: #000;text-align: right;float: left;}
+.Add_gift_p2 .Add_gift_p2_show{border:1px solid #ddd;border-radius: 2px;outline: none;width: 238px;height: 84px;font-size: 14px;color: #666;
+    line-height: 32px;text-align: left;display: block;float: right;padding: 0px 10px;}
+.Add_gift_btn{width: 260px;height: auto;overflow: hidden;margin-left: 86px;}
+.Add_gift_btn input{width: 80px;height: 32px;cursor: pointer;font-size: 14px;color: #fff;line-height: 32px;border:0px;outline: none;border-radius: 4px;}
+.Change{background: #34a8ff;}
+.RReset{background: #ff345a;}
+
+/*模块添加部分*/
+#Add_Modular{width: 430px;height: auto;overflow: hidden;margin: 150px auto;border:1px solid #ddd;border-radius: 2px;display: none;}
+.Add_Modular_top{width: 90%;height: 30px;border-bottom: 1px solid #ddd;background: #f2f2f2;padding: 5px 5%;}
+.Add_Modular_top p{width: auto;height: 30px;line-height: 30px;font-size: 14px;color: #232323;text-align: left;float: left;}
+.Add_Modular_top img{width: 12px;height: 12px;padding: 9px;display: block; float: right;cursor: pointer;}
+.Add_Modular{padding: 10px 42px;width: 346px;height: auto;overflow: hidden;background: #fff;}
+.Add_Modular_p{width: 100%;height: auto;overflow: hidden;padding: 10px 0px;}
+.Add_Modular_p p{width: 70px;height: 34px;line-height: 34px;font-size: 14px;color: #000;text-align: right;float: left;}
+.Add_Modular_p input{border:1px solid #ddd;border-radius: 2px;outline: none;width: 238px;height: 32px;font-size: 14px;color: #666;
+    line-height: 32px;text-align: left;display: block;float: right;padding: 0px 10px;}
+.Add_Modular_p select{border:1px solid #ddd;border-radius: 2px;outline: none;width: 260px;height: 32px;font-size: 14px;color: #666;
+    line-height: 32px;text-align: left;display: block;float: right;padding: 0px 10px;}
+.Add_Modular_btn{width: 260px;height: auto;overflow: hidden;margin-left: 86px;}
+.Add_Modular_btn input{width: 80px;height: 32px;cursor: pointer;font-size: 14px;color: #fff;line-height: 32px;border:0px;outline: none;border-radius: 4px;}
+.Add_btn{background: #34a8ff;}
+.Reset_btn{background: #ff345a;}
+
+
+
+/*房间添加部分*/
+#Add_room{width: 430px;height: auto;overflow: hidden;margin: 150px auto;border:1px solid #ddd;border-radius: 2px;display: none;}
+.Add_room_top{width: 90%;height: 30px;border-bottom: 1px solid #ddd;background: #f2f2f2;padding: 5px 5%;}
+.Add_room_top p{width: auto;height: 30px;line-height: 30px;font-size: 14px;color: #232323;text-align: left;float: left;}
+.Add_room_top img{width: 12px;height: 12px;padding: 9px;display: block; float: right;cursor: pointer;}
+.Add_room{padding: 10px 42px;width: 346px;height: auto;overflow: hidden;background: #fff;}
+.Add_room_p, .Add_room_p2{width: 100%;height: auto;overflow: hidden;padding: 10px 0px;}
+.Add_room_p p{width: 85px;height: 34px;line-height: 34px;font-size: 14px;color: #000;text-align: right;float: left;}
+.Add_room_p input{border:1px solid #ddd;border-radius: 2px;outline: none;width: 238px;height: 32px;font-size: 14px;color: #666;
+    line-height: 32px;text-align: left;display: block;float: right;padding: 0px 10px;}
+.Add_room_p select{border:1px solid #ddd;border-radius: 2px;outline: none;width: 260px;height: 32px;font-size: 14px;color: #666;
+    line-height: 32px;text-align: left;display: block;float: right;padding: 0px 10px;}
+.Add_room_p2 p{width: 86px;height: 34px;line-height: 34px;font-size: 14px;color: #000;text-align: right;float: left;}
+.Add_room_p2 .Add_room_p_show{width: 164px;height: 32px;border:1px solid #ddd;border-radius: 2px;float: left;}
+.Add_room_p2 input{cursor: pointer;width: 84px;height: 34px;border-radius: 4px;font-size: 14px;color: #fff;line-height: 34px;background:#ff6838;
+    border:0px;outline: none;float: right; }
+.Add_room_btn{width: 260px;height: auto;overflow: hidden;margin-left: 86px;}
+.Add_room_btn input{width: 80px;height: 32px;cursor: pointer;font-size: 14px;color: #fff;line-height: 32px;border:0px;outline: none;border-radius: 4px;}
+.Add_btn{background: #34a8ff;}
+.Reset_btn{background: #ff345a;}
+
+
+/*资讯添加部分*/
+#Add_wire{width: 660px;height: auto;overflow: hidden;margin: 70px auto;border:1px solid #ddd;border-radius: 2px;display: none;}
+.Add_wire_top{width: 96%;height: 30px;border-bottom: 1px solid #ddd;background: #f2f2f2;padding: 5px 2%;}
+.Add_wire_top p{width: auto;height: 30px;line-height: 30px;font-size: 14px;color: #232323;text-align: left;float: left;}
+.Add_wire_top img{width: 12px;height: 12px;padding: 9px;display: block; float: right;cursor: pointer;}
+.Add_wire{padding: 10px 42px;width: 576px;height: auto;overflow: hidden;background: #fff;}
+.Add_wire_p{width: 280px;height: auto;overflow: hidden;float: left;margin: 10px 0px;}
+.Add_wire_p p{width: 86px;height: 34px;line-height: 34px;font-size: 14px;color: #000;text-align: right;float: left;}
+.Add_wire_p .Add_wire_p_txt{width: 170px;height: 32px;font-size: 14px;color: #666;border:1px solid #ddd;border-radius: 2px;outline: none;float: right;padding: 0px 10px;}
+.Add_wire_p select{border:1px solid #ddd;border-radius: 2px;outline: none;width: 190px;height: 32px;font-size: 14px;color: #666;
+    line-height: 32px;text-align: left;display: block;float: right;padding: 0px 10px;}
+.Add_wire_p .Add_wire_p_btn{width: 80px;height: 32px;background: #ff6838;border:0px;outline: none;border-radius: 2px;
+    margin-left: 88px;margin-top: 15px;color: #fff;cursor: pointer;}
+.Add_wire_txt{width: 560px;height: 200px;border:1px solid #ddd;border-radius: 2px;margin: 10px auto;}
+.Add_wire_btn{width: 100%;height: auto;overflow: hidden;text-align: center;}
+.Add_wire_btn input{width: 80px;height: 32px;cursor: pointer;font-size: 14px;color: #fff;line-height: 32px;
+    border:0px;outline: none;border-radius: 4px;margin: 20px 15px;}
+.Save_btn{background: #34a8ff;}
+.Reset_btn{background: #ff345a;}
+
+
+/*密码重置部分*/
+#Reset{width: 140px;height: 30px;padding: 17px 20px;background: #fff;margin: 30vh auto;border:1px solid #ddd;border-radius: 4px;display: none;}
+#Reset p{background: url(../images/Success.png) 100% no-repeat;background-size: 30px 30px;background-position: 0% 50%;font-size: 14px;
+    line-height: 30px;width: 100%;height: 30px;text-align: left;text-indent: 40px;}
+
+/*提示框事件部分*/
+#Prompt{width:260px;height: auto;margin: 30vh auto;border:1px solid #ddd;border-radius: 2px; overflow: hidden;display: none;}
+.Prompt_top{width: 90%;height: 30px;border-bottom: 1px solid #ddd;background: #f2f2f2;padding: 5px 5%;}
+.Prompt_top p{width: auto;height: 30px;line-height: 30px;font-size: 14px;color: #232323;text-align: left;float: left;}
+.Prompt_top img{width: 12px;height: 12px;padding: 9px;display: block; float: right;cursor: pointer;}
+.Prompt{width: 90%;height: auto;overflow: hidden;padding: 15px 5%;background: #fff;}
+.Prompt p{width: 100%;height: 30px;text-align: left;background: url(../images/Doubt.png) 100% no-repeat;
+    background-size: 30px 30px;background-position: 0% 50%;font-size: 14px;line-height: 30px;color: #000;text-indent: 40px;}
+.Prompt_btn{width: 100%;height: auto;overflow: hidden;text-align: center;padding: 5px 0px;}
+.Prompt_btn input{width: 85px;height: 34px;margin: 5px;border-radius: 4px;border:0px;outline: none;cursor: pointer;font-size: 14px;line-height: 34px;}
+.Sure{background: #34a8ff;color: #fff;}
+.Cancel{background: #f1f1f1;color: #000;}
+
+/*恢复框事件部分*/
+#Reply, #Delete2, #Password{width:260px;height: auto;margin: 30vh auto;border:1px solid #ddd;border-radius: 2px; overflow: hidden;display: none;}
+.Reply_top, .Delete2_top, .Password_top{width: 90%;height: 30px;border-bottom: 1px solid #ddd;background: #f2f2f2;padding: 5px 5%;}
+.Reply_top p, .Delete2_top p, .Password_top p{width: auto;height: 30px;line-height: 30px;font-size: 14px;color: #232323;text-align: left;float: left;}
+.Reply_top img, .Delete2_top img, .Password_top img{width: 12px;height: 12px;padding: 9px;display: block; float: right;cursor: pointer;}
+.Reply, .Delete2, .Password{width: 90%;height: auto;overflow: hidden;padding: 15px 5%;background: #fff;}
+.Reply p, .Password p{width: 100%;height: 30px;text-align: left;background: url(../images/Warn.png) 100% no-repeat;
+    background-size: 30px 30px;background-position: 0% 50%;font-size: 14px;line-height: 30px;color: #000;text-indent: 40px;}
+.Delete2 p{width: 100%;height: 30px;text-align: left;background: url(../images/Doubt.png) 100% no-repeat;
+    background-size: 30px 30px;background-position: 0% 50%;font-size: 14px;line-height: 30px;color: #000;text-indent: 40px;}
+.Reply_btn, .Password_btn, .Delete2_btn{width: 100%;height: auto;overflow: hidden;text-align: right;padding: 5px 0px;}
+.Reply_btn input, .Password_btn input, .Delete2_btn input{width: 85px;height: 34px;margin: 5px;border-radius: 4px;border:0px;outline: none;cursor: pointer;font-size: 14px;line-height: 34px;}
+.Sure{background: #34a8ff;color: #fff;}
+
+
+/*退出事件部分*/
+#Out{width:260px;height: auto;margin: 30vh auto;border:1px solid #ddd;border-radius: 2px;overflow: hidden; display: none;}
+.Out_top{width: 90%;height: 30px;border-bottom: 1px solid #ddd;background: #f2f2f2;padding: 5px 5%;}
+.Out_top p{width: auto;height: 30px;line-height: 30px;font-size: 14px;color: #232323;text-align: left;float: left;}
+.Out_top img{width: 12px;height: 12px;padding: 9px;display: block; float: right;cursor: pointer;}
+.Out{width: 90%;height: auto;overflow: hidden;padding: 15px 5%;background: #fff;}
+.Out p{width: 100%;height: 30px;text-align: left;background: url(../images/Doubt.png) 100% no-repeat;
+    background-size: 30px 30px;background-position: 0% 50%;font-size: 14px;line-height: 30px;color: #000;text-indent: 40px;}
+.Out_btn{width: 100%;height: auto;overflow: hidden;text-align: center;padding: 5px 0px;}
+.Out_btn input{width: 85px;height: 34px;margin: 5px;border-radius: 4px;border:0px;outline: none;cursor: pointer;font-size: 14px;line-height: 34px;}
+.Sure{background: #34a8ff;color: #fff;}
+.Cancel{background: #f1f1f1;color: #000;}
+
+
+/*重置密码*/
+#Password2{width: 430px;height: auto;overflow: hidden;border:1px solid #ddd;border-radius: 2px;margin: 100px auto;display: none;}
+.Password2_top{width: 90%;height: 30px;border-bottom: 1px solid #ddd;background: #f2f2f2;padding: 5px 5%;}
+.Password2_top p{width: auto;height: 30px;line-height: 30px;font-size: 14px;color: #232323;text-align: left;float: left;}
+.Password2_top img{width: 12px;height: 12px;padding: 9px;display: block; float: right;cursor: pointer;}
+.Password2{padding: 10px 42px;width: 346px;height: auto;overflow: hidden;background: #fff;}
+.Password2_p{width: 100%;height: auto;overflow: hidden;padding: 10px 0px;}
+.Password2_p p{width: 90px;height: 34px;line-height: 34px;font-size: 14px;color: #000;text-align: right;float: left;}
+.Password2_p input{border:1px solid #ddd;border-radius: 2px;outline: none;width: 228px;height: 32px;font-size: 14px;color: #666;
+    line-height: 32px;text-align: left;display: block;float: right;padding: 0px 10px;}
+.Password2_p2{width: 253px;height: auto;overflow: hidden;margin-left: 96px;margin-top: 15px;}
+.Password2_p2 input{width: 80px;height: 32px;cursor: pointer;font-size: 14px;color: #fff;line-height: 32px;border:0px;outline: none;border-radius: 4px;}
+.Change2{background: #34a8ff;}
+.Reset2{background: #ff345a;}
+
+
+/*用户添加页面*/
+#Add_user{width: 430px;height: auto;border:1px solid #ddd;border-radius: 2px;margin: 100px auto;display: none;position: relative;}
+.Add_user_top{width: 90%;height: 30px;border-bottom: 1px solid #ddd;background: #f2f2f2;padding: 5px 5%;}
+.Add_user_top p{width: auto;height: 30px;line-height: 30px;font-size: 14px;color: #232323;text-align: left;float: left;}
+.Add_user_top img{width: 12px;height: 12px;padding: 9px;display: block; float: right;cursor: pointer;}
+.Add_user{padding: 10px 42px;width: 346px;height: auto;background: #fff;}
+.Add_user_p{width: 100%;height: auto;padding: 10px 0px;position: relative;}
+.Add_user_p p{width: 90px;height: 34px;line-height: 34px;font-size: 14px;color: #000;text-align: right;float: left;}
+.Add_user_p input{border:1px solid #ddd;border-radius: 2px;outline: none;width: 228px;height: 32px;font-size: 14px;color: #666;
+    line-height: 32px;text-align: left;display: block;float: right;padding: 0px 10px;}
+.Add_user_p select{border:1px solid #ddd;border-radius: 2px;outline: none;width: 250px;height: 32px;font-size: 14px;color: #666;
+    line-height: 32px;text-align: left;display: block;float: right;padding: 0px 10px;}
+.Add_user_btn{width: 253px;height: auto;overflow: hidden;margin-left: 96px;margin-top: 15px;}
+.Add_user_btn input{width: 80px;height: 32px;cursor: pointer;font-size: 14px;color: #fff;line-height: 32px;border:0px;outline: none;border-radius: 4px;}
+.Change3{background: #34a8ff;}
+.Reset3{background: #ff345a;}
+.prompt_box{width: 148px;height: 35px;position: absolute;right: -148px;top:10px;;z-index: 20;font-size: 14px;line-height: 34px;color: #ff3939;text-align: center;
+    background: url(../images/bg.png) 100% no-repeat;background-size: 148px 35px;background-position: left;display: none;}
+
+
+
+/*用户修改部分*/
+#User_change{width: 430px;height: auto;border:1px solid #ddd;border-radius: 2px;margin: 100px auto;display: none;}
+.User_change_top{width: 90%;height: 30px;border-bottom: 1px solid #ddd;background: #f2f2f2;padding: 5px 5%;}
+.User_change_top p{width: auto;height: 30px;line-height: 30px;font-size: 14px;color: #232323;text-align: left;float: left;}
+.User_change_top img{width: 12px;height: 12px;padding: 9px;display: block; float: right;cursor: pointer;}
+.User_change{padding: 10px 42px;width: 346px;height: auto;background: #fff;}
+.User_change_p{width: 100%;height: auto;padding: 10px 0px;}
+.User_change_p p{width: 90px;height: 34px;line-height: 34px;font-size: 14px;color: #000;text-align: right;float: left;}
+.User_change_p input{border:1px solid #ddd;border-radius: 2px;outline: none;width: 228px;height: 32px;font-size: 14px;color: #666;
+    line-height: 32px;text-align: left;display: block;float: right;padding: 0px 10px;}
+.User_change_p select{border:1px solid #ddd;border-radius: 2px;outline: none;width: 250px;height: 32px;font-size: 14px;color: #666;
+    line-height: 32px;text-align: left;display: block;float: right;padding: 0px 10px;}
+.User_change_btn{width: 253px;height: auto;overflow: hidden;margin-left: 96px;margin-top: 15px;}
+.User_change_btn input{width: 80px;height: 32px;cursor: pointer;font-size: 14px;color: #fff;line-height: 32px;border:0px;outline: none;border-radius: 4px;}
+.Change4{background: #34a8ff;}
+.Reset4{background: #ff345a;}
+
+/*前台用户添加页面*/
+#Add_user_front{width: 660px;height: auto;border:1px solid #ddd;border-radius: 2px;margin: 100px auto;display: none;}
+.Add_user_front_top{width: 96%;height: 30px;border-bottom: 1px solid #ddd;background: #f2f2f2;padding: 5px 2%;}
+.Add_user_front_top p{width: auto;height: 30px;line-height: 30px;font-size: 14px;color: #232323;text-align: left;float: left;}
+.Add_user_front_top img{width: 12px;height: 12px;padding: 9px;display: block; float: right;cursor: pointer;}
+.Add_user_front{padding: 10px 42px;width: 576px;height: auto;background: #fff;}
+.Add_user_front_p{width: 48%;height: auto;padding: 10px 0px;float: left;padding-right: 1.5%;}
+.Add_user_front_p p{float: left;width: 70px;height: 34px;text-align: right;line-height: 34px;font-size: 14px;color: #000;}
+.Add_user_front_p input{border:1px solid #ddd;border-radius: 2px;outline: none;width: 170px;height: 32px;font-size: 14px;color: #666;
+    line-height: 32px;text-align: left;display: block;float: right;padding: 0px 10px;}
+.Add_user_front_p select{border:1px solid #ddd;border-radius: 2px;outline: none;width: 190px;height: 32px;font-size: 14px;color: #666;
+    line-height: 32px;text-align: left;display: block;float: right;padding: 0px 10px;}
+.Add_user_front_btn{width:100%;height: auto;overflow: hidden;margin-top: 15px;text-align: center;}
+.Add_user_front_btn input{width: 80px;height: 32px;cursor: pointer;font-size: 14px;color: #fff;line-height: 32px;border:0px;outline: none;border-radius: 4px;}
+.Change5{background: #34a8ff;}
+.Reset5{background: #ff345a;}
+
+
+/*广告添加页面*/
+#Add_AD{width: 430px;height: auto;border:1px solid #ddd;border-radius: 2px;margin: 100px auto;display: none;}
+.Add_AD_top{width: 90%;height: 30px;border-bottom: 1px solid #ddd;background: #f2f2f2;padding: 5px 5%;}
+.Add_AD_top p{width: auto;height: 30px;line-height: 30px;font-size: 14px;color: #232323;text-align: left;float: left;}
+.Add_AD_top img{width: 12px;height: 12px;padding: 9px;display: block; float: right;cursor: pointer;}
+.Add_AD{padding: 10px 42px;width: 346px;height: auto;background: #fff;}
+.Add_AD_p{width: 100%;height: auto;padding: 10px 0px;}
+.Add_AD_p p{width: 90px;height: 34px;line-height: 34px;font-size: 14px;color: #000;text-align: right;float: left;}
+.Add_AD_p .Add_AD_p_file{border:1px solid #ddd;border-radius: 2px;outline: none;width: 228px;height: 32px;font-size: 14px;color: #666;
+    line-height: 32px;text-align: left;display: block;float: right;padding: 0px 10px;}
+.Add_AD_p_up{cursor: pointer;width: 84px;height: 34px;border-radius: 4px;font-size: 14px;color: #fff;line-height: 34px;background:#ff6838;
+    border:0px;outline: none;margin-left: 96px;margin-top: 15px;}
+.Add_AD_p2{width: 100%;height: auto;padding: 10px 0px;}
+.Add_AD_p2 p{width: 90px;height: 82px;line-height: 82px;font-size: 14px;color: #000;text-align: right;float: left;}
+.Add_AD_p2 .Add_AD_show{width: 245px;height: 80px;border:1px solid #ddd;border-radius: 2px;float: right;}
+
+.Add_AD_p3{width: 100%;height: auto;padding: 10px 0px;}
+.Add_AD_p3 p{width: 90px;height: 34px;line-height: 34px;font-size: 14px;color: #000;text-align: right;float: left;}
+.Add_AD_p3 input{border:1px solid #ddd;border-radius: 2px;outline: none;width: 228px;height: 32px;font-size: 14px;color: #666;
+    line-height: 32px;text-align: left;display: block;float: right;padding: 0px 10px;}
+
+.Add_AD_btn{width: 253px;height: auto;overflow: hidden;margin-left: 96px;margin-top: 15px;}
+.Add_AD_btn input{width: 80px;height: 32px;cursor: pointer;font-size: 14px;color: #fff;line-height: 32px;border:0px;outline: none;border-radius: 4px;}
+.Change6{background: #34a8ff;}
+.Reset6{background: #ff345a;}
+
+
+
+
+
+

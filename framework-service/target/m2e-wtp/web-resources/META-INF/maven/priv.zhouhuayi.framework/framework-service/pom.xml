@@ -1,0 +1,51 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>priv.zhouhuayi.framework</groupId>
+    <artifactId>framework</artifactId>
+    <version>1.0</version>
+  </parent>
+  <artifactId>framework-service</artifactId>
+  <packaging>war</packaging>
+  
+  <dependencies>
+  		<!-- 引入实体dao类 -->
+  		<dependency>
+			<groupId>priv.zhouhuayi.framework</groupId>
+			<artifactId>framework-dao</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		
+		<!-- 引入实体api类 -->
+		<dependency>
+			<groupId>priv.zhouhuayi.framework</groupId>
+			<artifactId>framework-api</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		
+		<dependency>
+		    <groupId>com.alibaba</groupId>
+		    <artifactId>dubbo</artifactId>
+		    <version>2.5.2</version>
+		    <exclusions>
+				<exclusion>
+					<groupId>org.springframework</groupId>
+					<artifactId>spring</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		
+        <dependency>  
+            <groupId>org.springframework</groupId>  
+            <artifactId>spring-webmvc</artifactId>  
+            <version>${spring.version}</version>  
+        </dependency>
+        
+        <!-- 引用切面jar包 -->
+		<dependency>
+			<groupId>org.aspectj</groupId>
+			<artifactId>aspectjweaver</artifactId>
+			<version>${aspectj.version}</version>
+		</dependency>
+	</dependencies>
+</project>

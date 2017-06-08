@@ -1,0 +1,194 @@
+html,
+body {
+	padding: 0;
+	margin: 0;
+}
+
+.top {
+	border: 0px solid blanchedalmond;
+	height: 50px;
+	width: 100%;
+	background-color: #131212;
+}
+
+.top_span {
+	color: #A5A5A5;
+	font-size: 14px;
+	top: 18px;
+	position: absolute;
+}
+
+.top_span1 {
+	color: #A5A5A5;
+	font-size: 14px;
+	top: 18px;
+}
+
+.top_span_right {
+	right: 10px;
+}
+
+.top_span_right_name {
+	color: #0058A3;
+}
+
+.top_span_right ul {
+	list-style-type: none;
+	margin-top: 0px;
+	float: right;
+}
+
+.top_span_right ul li {
+	display: inline;
+	padding-left: 15px;
+}
+
+.top_span_right ul li:hover {
+	cursor: pointer;
+}
+
+.center {
+	height: auto;
+	width: 100%;
+}
+
+.left {
+	border: 0px solid blanchedalmond;
+	height: 100%;
+	width: 15%;
+	background-color: #262222;
+	float: left;
+	left: 0px;
+	position: absolute;
+}
+
+/*.left ul {
+	background-color: #262222;
+	height: 100%;
+	padding-bottom: 193%;
+}
+
+.left ul li {
+	background-color: #384451;
+}
+
+.left ul li {
+	width: 100%;
+}
+
+.left ul li a {
+	color: #E9E8E8;
+}
+
+.left ul li.active a {
+	background-color: #2889DD;
+}
+
+.pills>li.active>a,
+.nav-pills>li.active>a:hover,
+.nav-pills>li.active>a:focus {
+	background-color: #2889DD;
+}
+
+.left ul li+li a:hover,
+.left ul li+li a:active,
+.left ul li+li a:visited {
+	background-color: #384451;
+}
+
+.left ul li a span.glyphicon-arrow-right {
+	right: 5px;
+	position: absolute;
+	top: auto;
+}
+
+.left ul li a span.glyphicon-chevron-right {
+	right: 5px;
+	position: absolute;
+	top: auto;
+}
+
+.left ul li ul li a {
+	color: #E9E8E8;
+}
+
+.left ul li a span {
+	padding-right: 10px;
+}
+
+.left ul li ul {
+	background-color: #262222;
+	height: auto;
+}
+
+.left ul li ul li {
+	background-color: #262222;
+}
+
+.left ul li ul li a {
+	padding-left: 0px;
+	padding-top: 0px;
+}
+
+.left ul li ul li a:active {
+	background-color: #384451;
+}
+
+.left ul li ul li a:hover {
+	background-color: #384451
+}
+
+.left ul li ul li a:visited {
+	background-color: #384451;
+}
+
+.left ul li ul li+li {
+	margin-left: 0px;
+}
+
+.left ul li ul li a span {
+	padding-left: 38px;
+}*/
+
+.right {
+	border: 0px solid blanchedalmond;
+	height: 100%;
+	width: 85%;
+	background-color: #E8EDF2;
+	float: right;
+	right: 0px;
+	position: absolute;
+}
+
+.rightDiv {
+	margin-top: 20px;
+	margin-left: 20px;
+	border: 1px solid gainsboro;
+}
+
+.right .content {
+	width: 100%;
+	height: auto;
+	border-top: 0px none;
+	background-color: white;
+}
+
+#tabs>li.active>a,
+.nav-tabs>li.active>a:hover,
+.nav-tabs>li.active>a:visited,
+.nav-tabs>li.active>a:focus {
+	border-top-color: white
+}
+
+#tab ul {
+	background-color: #F6F6F6;
+}
+
+
+/*#tab ul li.active a{background-color: white;}
+#tab ul li a:active{background-color: white;}
+#tab ul li a:visited{background-color: white;}*/
+
+#tab ul li a {
+	color: black
+}

@@ -1,0 +1,31 @@
+/* CSS Document */
+
+/* top“≥√Ê */
+
+TD {
+	FONT-SIZE: 12px; COLOR: #000000
+}
+TH {
+	FONT-SIZE: 12px; COLOR: #000000
+}
+.STYLE1 {
+	font-size: 24px;
+	font-weight: bold;
+}
+.STYLE3 {color:black}
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
+
+/* default“≥√Ê */
+.menu { margin: 10px auto; font: 75%/120% Verdana, Arial, Helvetica, sans-serif; }
+.menu_list { width: 180px; }
+.menu_head { padding: 5px 10px; cursor: pointer; position: relative; margin:1px; font-weight:bold; background: #eef4d3 url(left.png) center right no-repeat; }
+.menu_body { display:none; }
+.menu_body a { display:block; color:#006699; background-color:#EFEFEF; padding-left:10px; font-weight:bold; text-decoration:none; }
+.menu_body a:hover { color: #000000; text-decoration:underline; }
+
+
+
